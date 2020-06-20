@@ -4,12 +4,12 @@ services:
   mysqlsrv:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: "MySql2020!"
-      MYSQL_DATABASE: "workshop-python"
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "db-python"
     ports:
       - "3306:3306"
     volumes:
-      - /Users/c80967a/mysql:/var/lib/mysql
+      - /Users/nathanferreira/mysql:/var/lib/mysql
     networks:
       - mysql-compose-network
 
